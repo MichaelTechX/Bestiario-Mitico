@@ -1,0 +1,71 @@
+- El bestiario
+Página web el cual contine información sobre seres mitológicos o legendarios del mundo en un solo lugar en el que cualquiera pueda tener acceso. La informacion de cada ser podra estar categorizada y sera posiible poder filtrarlo para busqueda de informacion especifica o para busqueda mas amplia. 
+El objetivo principal es el aprendizaje de creación y diseño de páginas web para un proyecto más grande, y conforme se apliquen mejoras o cambios implementar cambios para el aprendizaje y actualizaciones de páginas web.  
+
+pros: Investigacion detalladas, abarca regiones, sencillo em texto, comporacion y bibliografia compartida. 
+cons: Informacion divergente, tiempo de fabricacion 
+
+ 
+
+ 
+
+- Método de trabajo
+Inicialmente la información de cada ser mitológico/legendario serán resúmenes, nada detallado y con información de bibliografías donde poder encontrar uno o más. Se establecerán estructuras de visualización y métodos de búsqueda para la selección de que información ver. En cuanto la estructura de la información y el sistema de búsqueda este completada y funcional se implementará diseño de página web, que sea apropiado para la temática. 
+
+	+Etapa de diseño  
+		Idear el diseño para la muestra y búsqueda de informacion que sea intuitiva. 
+
+	+Etapa de elección 
+		Seleccionar la mitología y los seres de este para el inicio de la pagina y la palicacion de la estructura. 
+
+	+Etapa de investigación 
+		Realizar resúmenes apropiados antes de ser implementados 
+
+	+Etapa de desarrollo de  
+		Implementar un sistema de busqueda y muestra de informacion, 
+
+	+Etapa de aplicación de diseño 
+		Aplicar diseños atractivos ya sea con ilustraciones o sistema atractivo que se haya optado en el la Etapa de diseño 
+
+Cada etapa puede repetirse o volver a ser realizados desde el punto 1 para posibles mejoras. 
+
+ 
+
+ 
+
+-Herramientas 
+
+Se utilizarán las herramientas de HTML, CSS y JavaScript para la elaboración del proyecto. 
+Al final del proyecto se buscara la implementacion de otras herramientas para el estudio futuro como el uso de Base de Datos o aplicacion de APIs. 
+
+	
+
+
+-Bestiario Mitico: Criaturas del pasado Vol.1
+
+Se redactara las criaturas mitologicas griegas para el primer volumen.
+Se desarrollara la estructrura, la escritura, la investigacion, la illustracion, el testeo y la publicacion de la pagina web.
+Sera la primera etapa para averiaguar la aplicacion del proyecto y los avances que se pueden realizar como actualizaciones o como modificaciones.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

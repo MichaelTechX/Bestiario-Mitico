@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
     width: 90%;
     padding-top: 20px;
-    background-image: url("img/fondo_inicio.jpg");
+    background-image: url("../../img/fondo_inicio.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -20,7 +20,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 18% 83%;
 }
 section{
     padding: 10px 5px 10px 10px;
@@ -30,6 +30,8 @@ a {
     text-decoration: none;
     color:inherit;
 }
+/*-----------------------------*/
+
 /*-----------------------------*/
 section.Titulo{
     background-color: rgb(177, 3, 3);
@@ -68,26 +70,25 @@ section.Catalogo{
 
 /*-----------------------------*/
 section.Descripcion{
+    padding: 20px;
+    padding-top: 40px;
     font-family: 'IM Fell English', serif;
     font-style: italic;
-}
-section.Descripcion > ul li{
-    display: list-item;
-    list-style: inside;
-    padding-left: 20px;
+
 }
 
+section.Descripcion img{
+    width: 400px;
+    height: 300px;
+    
+}
+
+section.Descripcion div{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
 /*-----------------------------*/
-
-
-
-
-
-
-
-
-
-
 
 
 

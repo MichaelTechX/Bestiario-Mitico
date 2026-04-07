@@ -11,6 +11,7 @@ body {
     margin: 0 auto;
     width: 90%;
     padding-top: 20px;
+    padding-bottom: 20px;
     background-image: url("../../img/fondo_inicio.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,6 +30,14 @@ section{
 a {
     text-decoration: none;
     color:inherit;
+}
+p {
+    padding: 5px;
+    white-space: pre-line;
+}
+img {
+    margin: 10px;
+    border: 10px solid rgba(221, 189, 6, 0.808);
 }
 /*-----------------------------*/
 

@@ -1,4 +1,4 @@
-/*Estructura general*/
+/* Estructura general */
 * {
     padding: 0;
     margin: 0;
@@ -11,12 +11,15 @@ body {
     margin: 0 auto;
     width: 90%;
     padding-top: 20px;
+    padding-bottom: 20px;
     background-image: url("img/fondo_inicio.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-/* Estructura de descripciones y catalogos */
+/*-----------------------------*/
+
+/* Estructura generales de etiquetas principales */
 
 main {
     display: grid;
@@ -30,7 +33,15 @@ a {
     text-decoration: none;
     color:inherit;
 }
+p {
+    padding: 10px;
+}
+p.presentacionInicial {
+    font-size: 20px;
+}
 /*-----------------------------*/
+
+/* Estructura de Titulo */
 section.Titulo{
     background-color: rgb(177, 3, 3);
     padding-bottom: 15px;
@@ -42,7 +53,7 @@ section.Titulo{
     padding-bottom: 10px;
     color: rgb(255, 255, 143);
     font-size: 40px;
-}
+} 
 .Titulo > p{
     color: white;
 }
@@ -51,7 +62,7 @@ section.Titulo{
 }
 /*-----------------------------*/
 
-/*-----------------------------*/
+/* Estructura de Catalago */
 section.Catalogo{
     background-color: rgb(209, 204, 204, 0.5);
 }
@@ -62,11 +73,14 @@ section.Catalogo{
     padding-left: 20px;
 }
 
-
+.Catalogo > ul li:hover{
+    text-decoration:underline;
+    color: rgb(73, 73, 73);
+}
 
 /*-----------------------------*/
 
-/*-----------------------------*/
+/* Estructura de Descriptcion */
 section.Descripcion{
     font-family: 'IM Fell English', serif;
     font-style: italic;

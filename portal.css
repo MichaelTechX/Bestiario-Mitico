@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.app {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app .headerPrimary {
+    background-color: aqua;
+    padding: 3px 10px 0px 10px;
+    position: fixed;
+    top: 0;
+    z-index: 40;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.app main {
+    position: relative;
+    background-color: bisque;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 30;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app main .content{
+    position: relative;
+    z-index: 30;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .app main .content header{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+} */
+
+/* 
+.app main .content footer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+} */
+
+.app main .background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    z-index: 10;
+    background-color: rgb(156, 123, 123);
+}

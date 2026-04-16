@@ -14,8 +14,10 @@ html, body {
     overflow: hidden;
 }
 
+/* ########################################################## */
+/* ############### CABECERA SUPERIOR ######################## */
+/* ########################################################## */
 .app .headerPrimary {
-    background-color: aqua;
     padding: 3px 10px 0px 10px;
     position: fixed;
     top: 0;
@@ -23,11 +25,43 @@ html, body {
     width: 100%;
     display: flex;
     justify-content: center;
+    color: white;
 }
 
+.app .headerPrimary > nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.app .headerPrimary > nav button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* ########################################################## */
+/* ############### BACKGROUND PAGINA ######################## */
+/* ########################################################## */
+.app main .background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    z-index: 10;
+    background-image: url(fondoportal.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ########################################################## */
+/* ################## CUERPO CENTRAL ######################## */
+/* ########################################################## */
 .app main {
     position: relative;
-    background-color: bisque;
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -63,10 +97,4 @@ html, body {
     justify-content: center;
 } */
 
-.app main .background {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    z-index: 10;
-    background-color: rgb(156, 123, 123);
-}
+

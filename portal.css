@@ -84,6 +84,7 @@ html, body {
 /* ########################################################## */
 /* ################## CUERPO CENTRAL ######################## */
 /* ########################################################## */
+/* main: Todo el cuerpo restante del documento sin contar el headerPrimary */
 .app main {
     position: relative;
     height: 100vh;
@@ -98,29 +99,33 @@ html, body {
 
 .app main .content{
     position: relative;
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
 
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    max-height: 400px;
-    width: 300px;
-    z-index: 30;
-    padding: 8px;
 
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(5px);
+
+    max-height: 400px;
+    width: 350px;
+    z-index: 30;
+
+    padding: 8px;
     border-radius: 3px;
+
+    background: rgba(237, 237, 237, 0.31);
+    backdrop-filter: blur(5px);
     /* height: 100%; usaria 100% si buscara ocupar todo el ancho y alto pero no es el caso */
     /* No uso justify-content: center ni el aling-items:center porque compiten con otros atributos
         por ej.: justify-content: center compite con flex-grow y esto impide que mi contenedor de
         lista de links a mitologias pueda aplicarse grow para que ocupe el tamaño restante del contenedor. */
 }
 
+/* MAIN: ENCABEZADO DE INPUT */
 .app main .content header{
     width: 100%;
     padding: 10px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    /* border-bottom: 2px solid rgba(255,255,255,0.2); */
     /* flex-grow: 1;  -->  Si pongo un glow, empujo el .list-mitologia
                         como un footer, pero como no busco un footer
                         no me sirve en este caso.*/
@@ -149,6 +154,8 @@ html, body {
                 
 }
 
+/* MAIN: MODIFICANDO LA LISTA DE BESTIARIOS */
+
 .app main .content .list-mitologia {
     display: flex;
     flex-direction: column;
@@ -156,9 +163,49 @@ html, body {
     overflow-y: auto;
 
     padding: 10px;
-    border: 1px solid black;
     border-radius: 3px;
-    background-color: aliceblue;
+}
+
+/* lista de links */
+.app main .content .list-mitologia a {
+    display: block;
+    padding: 8px 8px 8px 25px;
+    text-align: left;
+
+    color: rgb(14, 1, 1);
+    text-decoration: none;
+    font-weight: 500;
+
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,0.15);
+    margin-bottom: 1px;
+
+    background: rgba(221, 200, 200, 0.271);
+    backdrop-filter: blur(3px);
+    transition: all 0.25s ease;
+}
+
+.app main .content .list-mitologia a:hover {
+    transform: translateX(6px) scale(1.02);
+
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgb(255, 1, 1);
+
+    box-shadow: 0 4px 15px rgb(247, 7, 7);
+}
+
+.app main .content .list-mitologia a:active {
+    transform: scale(0.98);
+}
+
+/* barra scroll del contenedor central del main */
+.app main .content .list-mitologia::-webkit-scrollbar {
+    width: 6px;
+}
+
+.app main .content .list-mitologia::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
 }
 
 /* podria achicar el contenedor */

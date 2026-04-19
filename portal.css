@@ -18,14 +18,17 @@ html, body {
 /* ############### CABECERA SUPERIOR ######################## */
 /* ########################################################## */
 .app .headerPrimary {
-    padding: 3px 10px 0px 10px;
     position: fixed;
+    display: flex;
+    justify-content: center;
+
     top: 0;
     z-index: 40;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    padding: 3px 10px 0px 10px;
+
     color: white;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .app .headerPrimary > nav {
@@ -33,14 +36,35 @@ html, body {
     width: 100%;
     justify-content: space-between;
     padding: 10px 5px;
-    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .app .headerPrimary > nav button {
-    padding: 10px;
+    /* padding: 10px;
     border: none;
-    border-radius: 8px;
-    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255); */
+
+
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 0 15px;
+    border-radius: 4px;
+    color: #ffffff;
+    background: transparent;
+    line-height: 1.15;
+    font-size: 14px;
+    height: 36px;
+    word-spacing: 0px;
+    letter-spacing: .0892857143em;
+    text-decoration: none;
+    text-transform: uppercase;
+    min-width: 64px;
+    border: 1px solid #ededed;
+    text-align: center;
+    transition: background 280ms cubic-bezier(0.4, 0, 0.2, 1);        
 }
 
 /* ########################################################## */
@@ -74,27 +98,67 @@ html, body {
 
 .app main .content{
     position: relative;
-    z-index: 30;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+
+    margin: auto;
+    max-height: 400px;
+    width: 300px;
+    z-index: 30;
+    padding: 8px;
+
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 3px;
+    /* height: 100%; usaria 100% si buscara ocupar todo el ancho y alto pero no es el caso */
+    /* No uso justify-content: center ni el aling-items:center porque compiten con otros atributos
+        por ej.: justify-content: center compite con flex-grow y esto impide que mi contenedor de
+        lista de links a mitologias pueda aplicarse grow para que ocupe el tamaño restante del contenedor. */
 }
 
-/* .app main .content header{
+.app main .content header{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    /* flex-grow: 1;  -->  Si pongo un glow, empujo el .list-mitologia
+                        como un footer, pero como no busco un footer
+                        no me sirve en este caso.*/
+}
+
+.app main .content header > input {
+    width: 100%;
+
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #24292e;
+    vertical-align: middle;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
+    :focus{
+        border-color: #0366d6;
+        outline: none;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    }
+                
+}
+
+.app main .content .list-mitologia {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    justify-content: center;
-} */
+    overflow-y: auto;
 
-/* 
-.app main .content footer{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: center;
-} */
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: aliceblue;
+}
 
-
+/* podria achicar el contenedor */

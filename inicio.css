@@ -10,7 +10,6 @@ body {
     display: grid;
     margin: 0 auto;
     width: 90%;
-    padding-top: 20px;
     padding-bottom: 20px;
     background-image: url("img/fondo_inicio.jpg");
     background-size: cover;
@@ -84,6 +83,7 @@ section.Catalogo{
 section.Descripcion{
     font-family: 'IM Fell English', serif;
     font-style: italic;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 section.Descripcion > ul li{
     display: list-item;
@@ -94,11 +94,13 @@ section.Descripcion > ul li{
 /*-----------------------------*/
 
 
+/* Estructura de Inicios*/
+.Inicio {
+    background-color: grey;
+    padding: 25px;
+    border: 1px solid white;
 
-
-
-
-
+}
 
 
 

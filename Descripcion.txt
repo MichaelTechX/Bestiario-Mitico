@@ -31,8 +31,6 @@ Cada etapa puede repetirse o volver a ser realizados desde el punto 1 para posib
 
  
 
- 
-
 -Herramientas 
 
 Se utilizarán las herramientas de HTML, CSS y JavaScript para la elaboración del proyecto. 
@@ -48,6 +46,18 @@ Se desarrollara la estructrura, la escritura, la investigacion, la illustracion,
 Sera la primera etapa para averiaguar la aplicacion del proyecto y los avances que se pueden realizar como actualizaciones o como modificaciones.
 
 
+
+-Especificaciones
+
+cargar los datos cuando el usuario haga click
+para imagenes usar <img loading="lazy">, estado de carga antes de la muestra de imagenes
+		Realizar la aplicacion de estados de carga para todos los datos que se muestren en la pagina
+	
+La pagina se trbajara en un sistema hibrido (MPA y MSA), las criaturas estaran seaparadas por paginar independientes. 
+Mientras que la informacion general de cada mitologia, informacion de contacto, sesiones, bibliografias, entre otras, estaran en una sola pagina.
+
+
+(En futuro) Realizar un sistema de usarios y comentarios.
 
 
 

@@ -11,12 +11,31 @@
 </head>
 <body>
     <nav class="Inicio">
-        <button id="btnHome">Inicio</button>
+        <a href="#" id="btnMenu">Menu</a>
+        <a href="#" id="btnSesion">Sesion</a>
     </nav>
+
+    <div id="menuOverlay" class="menuOculto">
+        <div class="menuCaja">
+            <button id="cerrarMenu">X</button>
+            <a href="#home">Inicio</a>
+            <a href="#general">General</a>
+            <a href="#griega">Mitología Griega</a>
+        </div>
+    </div>
+
+    <div id="sesionOverlay" class="sesionOculta">
+        <div class="sesionCaja">
+            <button id="cerrarSesion">X</button>
+            <button>Iniciar sesion</button>
+            <button>Registrarse</button>
+
+        </div>
+
+    </div>
+
     <div id="contenido"></div>
 
 <script type="module" src="inicio.js"></script>
 </body>
-
-
 </html>

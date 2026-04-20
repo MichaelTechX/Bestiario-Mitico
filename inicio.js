@@ -4,11 +4,12 @@ function cargar(seccion) {
         const contenido = document.getElementById("contenido");
 
         if (seccion === "home") {
-            contenido.innerHTML = `<section class="Titulo">
-                <h1><a href="index.html">Bestiario Mitico: Criaturas del pasado</a></h1>
-                <p>
-                    Explora un vasto bestiario de criaturas legendarias provenientes de mitologías y culturas antiguas alrededor del mundo en un solo lugar.   
-                </p>
+            contenido.innerHTML = `
+                <section class="Titulo">
+                    <h1><a href="index.html">Bestiario Mitico: Criaturas del pasado</a></h1>
+                    <p>
+                        Explora un vasto bestiario de criaturas legendarias provenientes de mitologías y culturas antiguas alrededor del mundo en un solo lugar.   
+                    </p>
                 </section>
                 <main>
 
@@ -20,7 +21,7 @@ function cargar(seccion) {
                         <li><a href="mitologias/griega/medusa.html">Medusa</a></li>
                         <li><a href="mitologias/griega/hidra.html">Hidra</a></li>
                         <li><a href="mitologias/griega/cerberus.html">Cerberus</a></li>
-                        <li><a href="mitologias/griega/general.html">>...</a></li>
+                        <li><a href="#" id="btnGeneral">>...</a></li>
                     </ul>
                 </section>
 
@@ -56,40 +57,40 @@ function cargar(seccion) {
             </section>
             <section>
                 <h2>Mitologia Griega</h1>
-                <strong><a href="minotauro.html">El Minotauro</a></strong>
+                <strong><a href="mitologias/griega/minotauro.html">El Minotauro</a></strong>
                 <p>
                     El Minotauro habitaba en un laberinto imposible, una prisión de piedra y sombras. 
                     Mitad hombre, mitad toro, su fuerza era descomunal y su furia incontrolable. Nadie entraba sin temer no volver jamás…
                 </p>
-                <strong><a href="medusa.html">Medusa</a></strong>
+                <strong><a href="mitologias/griega/medusa.html">Medusa</a></strong>
                 <p>
                     En lo profundo de una cueva olvidada, la mirada de la Medusa convertía en piedra a todo aquel que osara mirarla. 
                     Su cabello, hecho de serpientes vivas, susurraba muerte. Pero no siempre fue un monstruo… alguna vez fue humana.
                 </p>
-                <strong><a href="hidra.html">La Hydra de Lerna</a></strong>
+                <strong><a href="mitologias/griega/hidra.html">La Hydra de Lerna</a></strong>
                 <p>
                     En los pantanos oscuros acechaba la temible Hidra de Lerna, una bestia de múltiples cabezas. 
                     Por cada una que caía, dos más crecían. Derrotarla no era solo cuestión de fuerza, sino de ingenio.
                 </p>
-                <strong><a href="cerberus.html">Cerberus</a></strong>
+                <strong><a href="mitologias/griega/cerberus.html">Cerberus</a></strong>
                 <p>
                     Guardando las puertas del inframundo, el feroz Cerbero vigilaba sin descanso. 
                     Sus tres cabezas observaban pasado, presente y futuro, y ningún alma escapaba de su custodia.
                 </p>
-                <strong><a href="pegaso.html">Pegaso</a></strong>
+                <strong><a href="mitologias/griega/pegaso.html">Pegaso</a></strong>
                 <p>
                     En lo alto de los cielos, libre y majestuoso, volaba Pegaso, el caballo alado. 
                     Símbolo de pureza y libertad, llevaba a los héroes a destinos que tocaban lo divino.
                 </p>
-                <strong><a href="ciclope.html">Ciclope</a></strong>
+                <strong><a href="mitologias/griega/ciclope.html">Ciclope</a></strong>
                 <p>
                     
                 </p>
-                <strong><a href="esfinge.html">La Esfinge Griega</a></strong>
+                <strong><a href="mitologias/griega/esfinge.html">La Esfinge Griega</a></strong>
                 <p>
                     
                 </p>
-                <strong><a href="harpia.html">La Harpia</a></strong>
+                <strong><a href="mitologias/griega/harpia.html">La Harpia</a></strong>
                 <p>
                     
                 </p>
@@ -99,21 +100,47 @@ function cargar(seccion) {
         
 }
 
+
+/*
 document.getElementById("btnHome").addEventListener("click", () => cargar("home"));
+document.getElementById("btnGeneral").addEventListener("click", () => cargar("general"));
+*/ 
+
 
 cargar("home");
 
+document.getElementById("btnMenu").addEventListener("click", (e) => {
+    e.preventDefault();
+    cargar("menu");
+});
 
+document.getElementById("btnSesion").addEventListener("click", (e) => {
+    e.preventDefault();
+    carga("sesion");
+})
 
+const menu = document.getElementById("menuOverlay");
+const sesion = document.getElementById("sesionOverlay");
 
+document.getElementById("btnMenu").addEventListener("click", (e) => {
+    e.preventDefault();
+    menu.style.display = "block";
+})
 
+document.getElementById("cerrarMenu").addEventListener("click", (e) =>{
+    e.preventDefault();
+    menu.style.display = "none";
+})
 
+document.getElementById("btnSesion").addEventListener("click", (e) => {
+    e.preventDefault();
+    sesion.style.display = "block";
+})
 
-
-
-
-
-
+document.getElementById("cerrarSesion").addEventListener("click", (e) =>{
+    e.preventDefault();
+    sesion.style.display = "none";
+})
 
 
 
